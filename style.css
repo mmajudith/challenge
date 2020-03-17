@@ -12,10 +12,9 @@ body{
     width: 600px;
     height: 700px;
     margin: auto auto;
-    /* background-image: url(landscape-4796735_1280.jpg);
+    background-image: url(landscape-4796735_1280.jpg);
     background-repeat: no-repeat;
-    background-position: center; */
-    background-color: rgb(45, 0, 128);
+    background-position: center; 
     background-size: cover;
 
 }
@@ -49,7 +48,7 @@ input{
 }
 
 button{
-    background-color:rgb(0, 128, 79);
+    background-color:skyblue;
     color: white;
     padding: 10px;
     border-radius: 10px;
@@ -57,6 +56,7 @@ button{
     width: 150px;
     margin-bottom: 10px;
     text-transform: uppercase;
+    cursor: pointer;
 
 }
 span{
