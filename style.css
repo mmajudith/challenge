@@ -43,8 +43,15 @@ input{
     border-radius: 10px;
     width: 250px;
     height: 30px;
-    margin-bottom: 20px;
+
     padding: 5px;
+}
+label{
+    margin-bottom: 20px ;
+}
+p{
+    margin-bottom: 10px;
+    color: red;
 }
 
 button{
@@ -54,15 +61,21 @@ button{
     border-radius: 10px;
     font-size: 16px;
     width: 150px;
-    margin-bottom: 10px;
+    margin: 10px 0px;
     text-transform: uppercase;
     cursor: pointer;
 
 }
+
 span{
     padding: 10px;
 
 }
 fieldset{
     border: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
