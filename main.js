@@ -2,13 +2,9 @@
 
 // Variables Declarations
 
-const nameVal = document.querySelector('#name-val').style.display = 'none';
-const mail = document.querySelector('#mail').style.display = 'none';
-const pass = document.querySelector('#pass').style.display = 'none';
-
-// const fullName = document.querySelector('#fullName');
-// const email = document.querySelector('#email');
-// const password = document.querySelector('#password');
+let nameVal = document.querySelector('#name-val');
+let mail = document.querySelector('#mail');
+let pass = document.querySelector('#pass');
 const form = document.querySelector('#form');
 
 // Regx object patterns 
@@ -19,12 +15,30 @@ const patterns = {
     pRegx: /^[\w@.-]{6,20}$/
 };
 
-// Function
+// Event Function
 
-form.addEventListener('submit', e =>{
+form.addEventListener('submit', (e) =>{
+
+    if(patterns.nRegx.test(form.fullName.value)){
+        console.log(form.fullName.value);
+    }else{
+         nameVal.style.display = 'block';  
+     }
+
+    if(patterns.eRegx.test(form.email.value)){
+        console.log(form.email.value);
+    }else{
+        mail.style.display = 'block';  
+    }
+
+    if(patterns.pRegx.test(form.password.value)){
+        console.log(form.password.value);
+    }else{
+        pass.style.display = 'block';
+    }   
+    
     e.preventDefault();
-    console.log(form.fullName.value);
+    
 });
-    
-    
+   
 
